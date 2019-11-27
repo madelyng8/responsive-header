@@ -35,6 +35,7 @@ nav {
 
 li {
   padding-bottom: .5rem;
+  list-style-type: none;
 }
 
 nav ul {
@@ -74,16 +75,18 @@ nav a:hover {
     line-height: 1.3;
   }
 
-  header {
+  header h1 {
     text-align: center;
+    padding-bottom: .5rem;
   }
 
-  h1,
-  p {
-    margin: 0 0 1.3rem;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  nav li {
+  li {
     width: 50%;
     align-items: center;
   }
@@ -115,6 +118,10 @@ nav a:hover {
     line-height: 1.5;
   }
 
+  header {
+    display: flex;
+  }
+
   h1,
   p {
     margin: 0 0 1.5rem;
@@ -125,12 +132,40 @@ nav a:hover {
     float: right;
   }
 
+  header h1 {
+    text-align: left;
+    margin-left: .9rem;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
+  }
+
+  header h1 {
+    text-align: left;
+    margin-left: .79rem;
+    padding-top: .57rem;
+  }
+
+  header {
+    display: flex;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    margin-right: 4rem;
+  }
+
+  nav ul {
+    text-align: right;
+  }
+
+  nav a {
+    text-align: right;
   }
 
 }
